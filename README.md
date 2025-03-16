@@ -1,4 +1,4 @@
-# 🤖 ChatBot Davi - Assistente Virtual
+# 🤖 ChatBot Bruno - Assistente Virtual
 
 Um assistente virtual interativo construído com Python, Streamlit e o modelo de IA Llama 3.3 da Groq.
 
@@ -24,8 +24,8 @@ ChatBot Davi é uma aplicação web que permite aos usuários interagir com um a
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/paribe/chatbot-davi.git
-   cd chatbot-davi
+   git clone https://github.com/paribe/chatbot-bruno.git
+   cd chatbot-bruno
    ```
 
 2. Instale as dependências:
