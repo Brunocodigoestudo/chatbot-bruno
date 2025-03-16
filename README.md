@@ -70,3 +70,4 @@ Após a execução, acesse o aplicativo no navegador através do endereço indic
 
 **Importante**: A chave API mostrada no código é apenas para fins de demonstração. Nunca compartilhe suas chaves API em repositórios públicos. Considere usar variáveis de ambiente ou arquivos de configuração seguros para armazenar suas chaves API.
 
+# chatbot-bruno
