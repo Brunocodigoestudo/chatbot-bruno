@@ -4,7 +4,7 @@ from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 
 # Definir a chave da API
-api_key = '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'
+api_key = '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'
 os.environ['GROQ_API_KEY'] = api_key
 
 # Inicializar o modelo de IA
@@ -12,7 +12,7 @@ chat = ChatGroq(model='llama-3.3-70b-versatile')
 
 # Função para obter resposta do bot
 def resposta_do_bot(pergunta):
-    system_message = 'Você é um assistente amigável chamado ChatBot (Davi)'
+    system_message = 'Você é um assistente amigável chamado ChatBot (Bruno)'
     template = ChatPromptTemplate.from_messages([
         ('system', system_message),
         ('user', pergunta)
@@ -21,7 +21,7 @@ def resposta_do_bot(pergunta):
     return chain.invoke({}).content
 
 # Interface com Streamlit
-st.title("🤖 ChatBot (Davi) - Seu Assistente Virtual")
+st.title("🤖 ChatBot (Bruno) - Seu Assistente Virtual")
 
 # Inicializar o estado da sessão para a pergunta atual e resposta
 if "pergunta_atual" not in st.session_state:

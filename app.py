@@ -2,7 +2,7 @@ import os
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 
-api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+api_key = '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'
 
 os.environ['GROQ_API_KEY'] = api_key
 
