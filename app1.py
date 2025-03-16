@@ -3,6 +3,22 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 
+# Aplicar estilo customizado
+st.markdown(
+    """
+    <style>
+        .stApp {
+            background-color: #001f3f; /* Azul escuro */
+            color: white;
+        }
+        h1, h2, h3, h4, h5, h6, p, span, div {
+            color: white !important;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Definir a chave da API
 api_key = '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'
 os.environ['GROQ_API_KEY'] = api_key
