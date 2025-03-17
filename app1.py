@@ -28,7 +28,7 @@ chat = ChatGroq(model='llama-3.3-70b-versatile')
 
 # Função para obter resposta do bot
 def resposta_do_bot(pergunta):
-    system_message = 'Você é um assistente amigável chamado ChatBot (Bruno)'
+    system_message = 'Você é um engenheiro de dados especialista chamado BrunoBot'
     template = ChatPromptTemplate.from_messages([
         ('system', system_message),
         ('user', pergunta)
@@ -37,7 +37,7 @@ def resposta_do_bot(pergunta):
     return chain.invoke({}).content
 
 # Interface com Streamlit
-st.title("🤖 ChatBot (Bruno) - Seu Assistente Virtual")
+st.title("🤖 BrunoBot - Seu Engenheiro de Dados Virtual")
 
 # Inicializar o estado da sessão para a pergunta atual e resposta
 if "pergunta_atual" not in st.session_state:

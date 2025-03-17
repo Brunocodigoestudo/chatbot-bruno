@@ -1,4 +1,4 @@
-# 🤖 ChatBot Bruno - Assistente Virtual
+# 🤖 BrunoBot - Seu Engenheiro de Dados Virtual
 
 Um assistente virtual interativo construído com Python, Streamlit e o modelo de IA Llama 3.3 da Groq.
 
@@ -45,7 +45,7 @@ ChatBot Davi é uma aplicação web que permite aos usuários interagir com um a
 
 ## 🚀 Execução
 
-Para iniciar o ChatBot Davi:
+Para iniciar o BrunoBot:
 
 ```bash
 streamlit run app.py
