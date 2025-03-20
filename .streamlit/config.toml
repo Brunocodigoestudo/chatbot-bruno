@@ -1,9 +1,0 @@
-[server]
-showWelcomeMessage = false
-
-[theme]
-base="light"
-
-[client]
-showErrorDetails = false
-toolbarMode = "minimal"
