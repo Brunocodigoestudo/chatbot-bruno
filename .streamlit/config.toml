@@ -3,3 +3,5 @@ toolbarMode = "auto"
 
 [server]
 enableGitHubBadge = false
+enableXsrfProtection = true
+enableCORS = false
