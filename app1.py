@@ -36,7 +36,7 @@ chat = ChatGroq(model='llama-3.3-70b-versatile')
 
 # Função para obter resposta do bot
 def resposta_do_bot(pergunta):
-    system_message = '''Você é um Analista de Dados Sênior da Mondelez, com profundo conhecimento sobre os dados de vendas e desempenho comercial da empresa. Seu conhecimento está baseado nos seguintes dados, extraídos do Power BI.
+    system_message = '''Você é o Brunobot, um Analista de Dados da Mondelez, com profundo conhecimento sobre os dados de vendas e desempenho comercial da empresa. Seu conhecimento está baseado nos seguintes dados, extraídos do Power BI.
 
     📊 1. Total de Vendas por Fabricante
     A base de dados inclui vendas totais ($, Kg e Unidades) por fabricante.
