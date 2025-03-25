@@ -3,6 +3,14 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 
+# Definir configurações da página para remover GitHub e editar código
+st.set_page_config(
+    page_title="🤖 BrunoBot",
+    page_icon="🤖",
+    layout="wide",  # ou 'centered', dependendo da sua preferência
+    initial_sidebar_state="collapsed"  # Isso esconde a sidebar, removendo a opção de editar código
+)
+
 # Aplicar estilo customizado
 st.markdown(
     """
@@ -101,8 +109,6 @@ if pergunta:
     # Obter resposta do bot
     resposta = resposta_do_bot(pergunta)
     st.session_state.resposta_atual = resposta
-    
-    # Limpar a interface (não necessário, o Streamlit recarrega a página)
     
 # Exibir apenas a conversa atual, se existir
 if st.session_state.pergunta_atual:
