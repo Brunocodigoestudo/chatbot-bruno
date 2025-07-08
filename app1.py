@@ -11,7 +11,7 @@ from langchain.prompts import ChatPromptTemplate
 
 # Definir configurações da página para remover GitHub e editar código
 st.set_page_config(
-    page_title="🤖 BrunoBot",
+    page_title="🤖BrunoBot - Especialista em COVID-19",
     layout="wide",  # ou 'centered', dependendo da sua preferência
     initial_sidebar_state="collapsed"  # Isso esconde a sidebar, removendo a opção de editar código
 )
@@ -138,7 +138,7 @@ Demografia dos Casos Positivos: Adultos e homens são a maioria dos casos positi
     return chain.invoke({}).content
 
 # Interface com Streamlit
-st.title("🤖 BrunoBot - Especialista em COVID-19")
+st.title("🤖BrunoBot - Especialista em COVID-19")
 
 # Inicializar o estado da sessão para a pergunta atual e resposta
 if "pergunta_atual" not in st.session_state:
