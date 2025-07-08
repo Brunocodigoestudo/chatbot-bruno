@@ -1,6 +1,11 @@
 import os
 import streamlit as st
 from langchain_groq import ChatGroq
+
+
+load_dotenv()
+api_key = os.getenv("GROQ_API_KEY")
+os.environ["GROQ_API_KEY"] = api_key
 from langchain.prompts import ChatPromptTemplate
 
 # Definir configurações da página para remover GitHub e editar código
