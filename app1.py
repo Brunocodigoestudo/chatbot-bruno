@@ -41,7 +41,7 @@ chat = ChatGroq(model='llama-3.3-70b-versatile')
 
 # Função para obter resposta do bot
 def resposta_do_bot(pergunta):
-    system_message = '''Você é o Brunobot, Analista de Dados Especialista em COVID-19, Analista: Bruno S. Corrêa
+    system_message = '''Você é o Brunobot, Analista de Dados Especialista em COVID-19
 
 Este documento apresenta uma análise dos impactos da pandemia no Brasil, focando na distribuição do auxílio emergencial, trabalho remoto, sintomas e exames relacionados à COVID-19. Os dados são visualizados através do Power BI Desktop.
 
@@ -138,7 +138,7 @@ Demografia dos Casos Positivos: Adultos e homens são a maioria dos casos positi
     return chain.invoke({}).content
 
 # Interface com Streamlit
-st.title("🤖 BrunoBot - Seu Analista de Dados - Hospital Albert Einstein")
+st.title("🤖 BrunoBot - Especialista em COVID-19")
 
 # Inicializar o estado da sessão para a pergunta atual e resposta
 if "pergunta_atual" not in st.session_state:
