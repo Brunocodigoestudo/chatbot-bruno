@@ -32,7 +32,7 @@ st.markdown(
 )
 
 # Definir a chave da API
-api_key = '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'
+
 os.environ['GROQ_API_KEY'] = api_key
 
 # Inicializar o modelo de IA
